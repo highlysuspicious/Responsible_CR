@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="765.0" prefWidth="1135.0" style="-fx-background-color: white;" stylesheets="@../../stylesheets/dashboard.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.responsible_cr.student.student_routine">
+   <children>
+      <Text layoutX="478.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class Routine">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Text>
+      <TableView fx:id="routine_view" layoutX="60.0" layoutY="116.0" prefHeight="601.0" prefWidth="1027.0">
+        <columns>
+          <TableColumn fx:id="no" editable="false" prefWidth="50.0" sortable="false" text="No" />
+          <TableColumn fx:id="date" editable="false" minWidth="0.0" prefWidth="140.0" sortable="false" text="Date" />
+            <TableColumn fx:id="day" editable="false" prefWidth="140.0" sortable="false" text="Day" />
+            <TableColumn fx:id="p1" editable="false" prefWidth="140.0" sortable="false" text="1" />
+            <TableColumn fx:id="p2" editable="false" prefWidth="140.0" sortable="false" text="2" />
+            <TableColumn fx:id="p3" editable="false" prefWidth="140.0" sortable="false" text="3" />
+            <TableColumn fx:id="p4" editable="false" prefWidth="140.0" sortable="false" text="4" />
+            <TableColumn fx:id="p5" prefWidth="140.0" text="5" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

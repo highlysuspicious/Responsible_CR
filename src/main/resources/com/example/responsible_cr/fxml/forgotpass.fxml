@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="760.0" prefWidth="1280.0" style="-fx-background-color: white;" stylesheets="@../stylesheets/loginPage.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.responsible_cr.forgotpass">
+   <children>
+      <AnchorPane layoutX="439.0" layoutY="154.0" prefHeight="420.0" prefWidth="390.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);" styleClass="big_btn1" stylesheets="@../stylesheets/loginPage.css">
+         <children>
+            <Button layoutX="101.0" layoutY="328.0" mnemonicParsing="false" onAction="#change_pass" prefHeight="30.0" prefWidth="201.0" style="-fx-background-color: black;" styleClass="big_btn" text="Change" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Dubai Medium" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="power" layoutX="25.0" layoutY="30.0" prefHeight="56.0" prefWidth="353.0" text="Change Your Password" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameField" layoutX="76.0" layoutY="120.0" prefHeight="43.0" prefWidth="259.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordField" layoutX="75.0" layoutY="173.0" prefHeight="43.0" prefWidth="256.0" promptText="New Password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: black;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="passwordField1" layoutX="76.0" layoutY="226.0" prefHeight="43.0" prefWidth="256.0" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: black;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="wrong" alignment="TOP_CENTER" layoutX="109.0" layoutY="282.0" prefHeight="28.0" prefWidth="184.0" textFill="#ef0707" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="1086.0" layoutY="72.0" mnemonicParsing="false" onAction="#back_opening" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: black;" styleClass="big_btn" stylesheets="@../stylesheets/loginPage.css" text="Back" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

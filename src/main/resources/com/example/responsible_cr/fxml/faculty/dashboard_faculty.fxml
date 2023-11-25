@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="760.0" prefWidth="1280.0" style="-fx-background-color: white;" stylesheets="@../../stylesheets/loginPage.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.responsible_cr.faculty.dashboard_faculty">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="-6.0" prefHeight="770.0" prefWidth="146.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="12.0" layoutY="28.0" prefHeight="58.0" prefWidth="122.0" text="Faculty Dashboard" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="45.0" layoutY="107.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+            <Button layoutX="12.0" layoutY="147.0" mnemonicParsing="false" onAction="#go_notes" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: transparent; -fx-background-radius: 5px; -fx-border-width: 2px 2px 2px 2px; -fx-border-color: white;" styleClass="big_btn" text="Notes" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="11.0" layoutY="268.0" mnemonicParsing="false" onAction="#go_routine" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: transparent; -fx-background-radius: 5px; -fx-border-width: 2px 2px 2px 2px; -fx-border-color: white;" styleClass="big_btn" text="Routine" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="11.0" layoutY="333.0" mnemonicParsing="false" onAction="#go_exam" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: transparent; -fx-background-radius: 5px; -fx-border-width: 2px 2px 2px 2px; -fx-border-color: white;" styleClass="big_btn" text="Exam" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="12.0" layoutY="209.0" mnemonicParsing="false" onAction="#go_notice" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: transparent; -fx-background-radius: 5px; -fx-border-width: 2px 2px 2px 2px; -fx-border-color: white;" styleClass="big_btn" text="Notice" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="11.0" layoutY="699.0" mnemonicParsing="false" onAction="#go_back" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: transparent; -fx-background-radius: 5px; -fx-border-width: 2px 2px 2px 2px; -fx-border-color: white;" styleClass="big_btn" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="danchore" layoutX="146.0" layoutY="1.0" prefHeight="763.0" prefWidth="1133.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="752.0" fitWidth="768.0" layoutX="176.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/dashboard_faculty.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
